@@ -9,5 +9,3 @@ categories:
     - AAD
     - Security
 ---
-
-{:toc}

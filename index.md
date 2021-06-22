@@ -1,4 +1,11 @@
 ---
 layout: home
-title: Welcome
 ---
+
+# Welcome!
+
+{:toc}
+
+# Other stuff
+
+YaaDa!

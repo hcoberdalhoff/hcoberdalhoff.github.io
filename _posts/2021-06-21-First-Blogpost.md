@@ -15,5 +15,5 @@ categories:
 Some Text
 
 |Table|bla|
------------
+|-|-|
 | blub |blub| 

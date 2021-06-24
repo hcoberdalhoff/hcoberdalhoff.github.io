@@ -10,4 +10,4 @@ title: about
 Hans-Carl Oberdalhoff \
 Ludwigstr. 20 \
 93093 Donaustauf \
-[hcoberdalhoff@gmail.com]
+[hcoberdalhoff@gmail.com](hcoberdalhoff@gmail.com)

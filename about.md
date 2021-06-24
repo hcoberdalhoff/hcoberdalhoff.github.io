@@ -6,7 +6,8 @@ title: about
 
 ## Impressum 
 (Impressum is a German law thing)
-Hans-Carl Oberdalhoff
-Ludwigstr. 20
-93093 Donaustauf
+
+Hans-Carl Oberdalhoff \
+Ludwigstr. 20 \
+93093 Donaustauf \
 hcoberdalhoff@gmail.com

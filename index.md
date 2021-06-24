@@ -14,7 +14,7 @@ PS ~> Get-HCOContent -all | Format-Table
  ------    ---
  Twitter   https://twitter.com/HOberdalhoff
  LinkedIn  https://linkedin.com/in/hcoberdalhoff/
- YouTube   https://www.youtube.com/channel/UCJqZcw74tjpISdkmgn6OWoQ
+ YouTube   https://youtube.com/channel/UCJqZcw74tjpISdkmgn6OWoQ
  GitHub    https://github.com/hcoberdalhoff
 ```
 

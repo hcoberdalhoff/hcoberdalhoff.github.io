@@ -22,7 +22,7 @@ Let me give you this example from personal experience:
 
 Google Photos allows you to search for people in your pictures. For this, Google uses the photos you took, looks for faces and uses an AI to group/label pictures that are probably from the same person. So, one evening when I did search for pictures of my son, my expectation was to only see pictures where my son's face is actually visible. But this was not the case. I got this:
 
-![2021-04-11-img1.png](2021-04-11-img1.png)
+![2021-04-11-img1.png](../images/2021-04-11-img1.png)
 
 In this example you can clearly see some pictures of my son's face - the boy in the red jacket. But what you can also see are pictures of him from behind - where you can not see his face. Since he is not wearing this jacket on all my other pictures, I don't think that the AI learned to wrongly identify all red jackets as my son. Rather it seems as if the machine was smart enough to understand the shared context (time and space) of those pictures as this information is well available as timestamp and GPS data in the files. In this place and this time my son was wearing a red jacket. The machine seems to understand that these photos are part of a larger context/scene and by extension, it can "find" my son by looking for his clothes in this scene - even if no face is visible. To me this was a postiive but grave realization. 
 

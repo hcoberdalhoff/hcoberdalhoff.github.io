@@ -3,5 +3,6 @@ theme: minima
 author: Hans-Carl Oberdalhoff
 github_username: hcoberdalhoff
 twitter_username: HOberdalhoff
+url: https://notdoneyet.blog
 plugins:
   - jekyll-feed

@@ -9,3 +9,11 @@ categories:
     - AAD
     - Security
 ---
+Install Node.js on Windows, e.g. using WinGet
+```
+winget install -e --id OpenJS.NodeJS
+```
+Install Mermaid CLI using npm
+```
+npm install -g @mermaid-js/mermaid-cli
+```

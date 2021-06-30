@@ -8,7 +8,7 @@ categories:
     - Google
     - Machine Learning
 ---
-AI is everywhere. It can by now detect human cancer, recognize images and speech much better than most humans. More mundane examples are the voice assistants in our phones or amazon giving you better recommendations based on your buying history. Also: Damn good search results by Google that seem to understand the most probable context of your search request.
+AI is everywhere. It can by now detect human cancer, recognize images and speech much better than most humans. More mundane examples are the voice assistants in our phones or Amazon giving you better recommendations based on your buying history. Also: Damn good search results by Google that seem to understand the most probable context of your search request.
 
 Let's look into this more deeply. You can easily find examples, where your input to a search request was slightly off, but still the machine got you what you wanted. If you google "black horse song" you will get result for Katy Perry's song "**Dark** Horse". Google is actually so sure about this result, that it does not even offer some form of "maybe you really meant **black** horse" alternative.
 

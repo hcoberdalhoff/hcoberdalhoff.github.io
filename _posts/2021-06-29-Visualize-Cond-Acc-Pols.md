@@ -10,25 +10,25 @@ categories:
 ---
 ## Conditional Access Policies and MS Graph
 
-Conditional Access Policies are an important part of most AzureAD environments. They allow to protect apps and data, by e.g. enforcing Multi-Factor Authentication or by restricting unneccessary access.
+[Conditional Access Policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) are an important part of most AzureAD environments. They allow to protect apps and data, by e.g. enforcing Multi-Factor Authentication or by restricting unneccessary access.
 
 You can interact with Conditional Access Policies using MS Graph via the `/identity/conditionalAccess/policies` resource to create, read, update, delete individual policies.
 
-Conditional Access Policies are represented as JSON documents in MS Graph - as described at [docs.microsoft.com](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy).
+Conditional Access Policies are represented as JSON documents in MS Graph - as described in the [MS Graph documentation - conditionalaccesspolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy).
 
 ## Interact with PowerShell
 
 PowerShell allows to interact with MS Graph using `Invoke-RestMethod`, but you still have to handle things like authentication, pagination etc.
 
-To make life simpler for myself, I wrote some functions a MS Graph module [MEMPSToolkit](https://github.com/hcoberdalhoff/MEMPSToolkit) to interact with MS Graph, incl. Conditional Access Policies.  
+To make life simpler for myself, I wrote some functions a into a MS Graph wrapper module [MEMPSToolkit](https://github.com/hcoberdalhoff/MEMPSToolkit), incl. handling Conditional Access Policies.  
 
-Assuming you have the module installed, let's authenticate to Graph - this time using a Service Principal / clientId and clientSecret. You will need to grant `Policy.Read.All` permissions to this AppRegsitration / Service Principal to be able to read Conditional Access Policies.
+Assuming you have the module installed, let's authenticate to Graph first - this time using a Service Principal / clientId and clientSecret. You will need to grant `Policy.Read.All` permissions to this AppRegsitration / Service Principal to be able to read Conditional Access Policies.
 
 ```powershell
 $token = Get-AppLoginToken -tenant "contoso.com" -clientId "123..." -secretValue "!?#..."
 ```
 
-`$token` stores your bearer token for the actual requests.  Now we fetch all Conditional Access Policies.
+`$token` stores your bearer token for the actual requests. Now we fetch all Conditional Access Policies.
 
 ```powershell
 $CAPols = Get-ConditionalAccessPolicies -authToken $token
@@ -99,7 +99,8 @@ So I wrote a parser / interpreter `Write-ConditionalAccessPolicyToMermaid` :D
 
 It will
 - resolve all object names
-- pretty print the whole thing into a [mermaid](https://mermaid-js.github.io/mermaid/) diagram 
+- truncate empty settings/nodes
+- pretty print the whole thing into a [Mermaid](https://mermaid-js.github.io/mermaid/) diagram 
 
 ```powershell
 Write-ConditionalAccessPolicyToMermaid -pol $CAPols[0] -asHTML $false -asMarkdown $false -authToken $token
@@ -142,9 +143,9 @@ The rendered result looks like this:
 
 ## Additional tooling
 
-If you need to create PNG, SVG or PDF output directly, you can install/use [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). 
+If you need to create PNG, SVG or PDF output from Mermaid, you can install/use [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). 
 
-To install Node.js on Windows, e.g. using WinGet
+Mermaid-cli is written using Node.js. To install Node.js on Windows, e.g. using WinGet
 ```
 winget install -e --id OpenJS.NodeJS
 ```

@@ -10,7 +10,7 @@ categories:
 ---
 AI is everywhere. It can by now detect human cancer, recognize images and speech much better than most humans. More mundane examples are the voice assistants in our phones or Amazon giving you better recommendations based on your buying history. Also: Damn good search results by Google that seem to understand the most probable context of your search request.
 
-Let's look into this more deeply. You can easily find examples, where your input to a search request was slightly off, but still the machine got you what you wanted. If you google "black horse song" you will get result for Katy Perry's song "**Dark** Horse". Google is actually so sure about this result, that it does not even offer some form of "maybe you really meant **black** horse" alternative.
+Let's look into this more deeply. You can easily find examples, where your input to a search request was slightly off, but still the machine got you what you wanted. If you google "black horse song" you will get results for Katy Perry's song "**Dark** Horse". Google is actually so sure about this result, that it does not even offer some form of "maybe you really meant **black** horse" alternative.
 
 Ok, so Google search is smart about replacing certain searches based on probable alternatives. That may be something where human developers were smart and added features to look into more probable semantic alternatives for searches with weak results. Maybe. But maybe this is part of something different - namely: understanding context better as AI.
 

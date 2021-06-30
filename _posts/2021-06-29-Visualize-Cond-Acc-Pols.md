@@ -145,7 +145,7 @@ The rendered result looks like this:
 
 If you need to create PNG, SVG or PDF output from Mermaid, you can install/use [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). 
 
-Mermaid-cli is written using Node.js. To install Node.js on Windows, e.g. using WinGet
+Mermaid-cli is written using Node.js, so to install Node.js on Windows, e.g. use WinGet
 ```
 winget install -e --id OpenJS.NodeJS
 ```

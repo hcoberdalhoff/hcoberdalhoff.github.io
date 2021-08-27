@@ -21,7 +21,9 @@ What are we trying to solve? Basically,
 
 For this procedure, you can use basically anythig that can talk [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer). Just for quality of life, I will use my own MS Graph wrapper / PS module [MEMPSToolkit](https://github.com/hcoberdalhoff/MEMPSToolkit/). This allows me to use `Invoke-GraphRestRequest`, which abstracts some of the REST-headaches away. 
 
-Btw, if you wonder how to use this say in MS Graph Explorer, you can in your head replace `Invoke-GraphRestRequest -resource ...` with `GET https://graph.microsoft.com/v1.0/...` as `GET` is the default method. So, `Invoke-GraphRestRequest -resource "/groups"` is equivalent with `GET https://graph.microsoft.com/v1.0/groups` if you use curl or other tools.
+Btw, if you wonder how to use this, say, with curl or MS Graph Explorer, you can in your head replace `Invoke-GraphRestRequest -resource ...` with `GET https://graph.microsoft.com/v1.0/...` as `GET` is the default method. 
+
+So, `Invoke-GraphRestRequest -resource "/groups"` is equivalent with `GET https://graph.microsoft.com/v1.0/groups` if you use curl or other tools.
 
 In this post I assume you already managed to [authenticate](https://github.com/hcoberdalhoff/MEMPSToolkit/#authenticate-against-ms-graph) and have enough permissions. 
 

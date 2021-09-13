@@ -9,13 +9,19 @@ categories:
 ---
 I had the opportunity to play around with Windows 365, Microsoft's new Cloud-based Desktop-as-a-Service (DaaS). To be more specific, we are testing out Windows 365 "Business". 
 
+Windows 365 allows to deploy a virtual Windows VM per user on Azure, but will not force you to manage the VM or Azure resources yourself.
+
+Basically, you just assign it like a license to a user and it will just appear for the user.
+
+![Cloud PC Dashboard](../images/2021-09-13-14-08-12.png)
+
 Windows 365 "Business" is different from its bigger "Enterprise" counterpart, as 
 - You can not choose a custom OS image.
 - You can not integrate existing on-prem networks (no VPN/VNet-Attach)
-- You can not choose the location of your VMs (datacenter is chosen for you)
-- You can have a max of 300 VMs 
+- You can not choose the location of your VMs (the Azure datacenter is chosen for you)
+- You can have a max. of 300 VMs 
 
-We actively chose this as it has a wonderful upside: No need for a Active Directory Domain Controller. The VMs will natively join you tenant's AzureAD and automatically be picked up by your Intune/Endpoint Manager (if you configured that accordingly). Nice.
+We actively chose this as it has a wonderful upside: There is no need for an Active Directory Domain Controller. The VMs will natively join you tenant's AzureAD and automatically be picked up by your Intune/Endpoint Manager (if you configured that accordingly). Nice.
 
 Performance. Well. Kinda slow. Feels throttled under load. When at rest on used for normal office work it is responsive and fast even with a 2 vCPU setup.
 

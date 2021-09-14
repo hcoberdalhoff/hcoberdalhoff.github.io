@@ -68,7 +68,7 @@ Sorry for the screenshot being in German, btw.
 
 # Security and Longevity
 
-## "Classic" VMs - No TPM, no SecureBoot, no CredentialGuard
+## No TPM, No SecureBoot
 The VMs offered are "v1" VMs, they do not have (virtual) TPM and no SecureBoot. If you configure Bitlocker/Drive Encryption as Intune/MEM policy, it is implicitly skipped on these VMs. On the plus side, you don't need to change your existing policy sets. As a VM can't be lost on a train or in a hotel, the main reason for disk encryption on a Windows client is not given - so.. ok.
 
 The missing SecureBoot and other TPM-based features like CredentialGuard leave these VMs open to some malware/cyber-attacks most current laptops are protected against. This is not a major risk, but you should be aware.

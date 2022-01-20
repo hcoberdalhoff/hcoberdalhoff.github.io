@@ -80,7 +80,7 @@ Windows 365 Business now offers Windows 11 on newer "Gen 2" VMs by default. Thes
 Missing TPM and SecureBoot might harm the longevity of these VMs - Windows 11 does require a TPM and Secure Boot. What will happen then? Will every user have to destroy his existing VM and create a new one? Or will there be some in-place migration? Btw, do not try to update your VM to Windows 11 yourself right now. [It will fail.](https://www.zdnet.com/article/windows-365-can-you-install-windows-11-on-a-cloud-pc/) I tried, too.
 
 ### Update 2022-01
-Windows 365 Business now offer Windows 11 by default. This is done using "Gen 2" VMs incl. a virtual TPM module as mentioned above. You can not upgrade an existing VM, but when you simple "recreate" (destroy/rebuild) your VM it will magically become a Windows 11 one. No, there is no choice btw - at least with Win365 Business.
+Windows 365 Business now offers Windows 11 by default. This is done using "Gen 2" VMs incl. a virtual TPM module as mentioned above. You can not inplace-upgrade an existing VM, but when you "recreate" (destroy/rebuild) your VM it will automagically get Windows 11. No, there is no choice btw - at least with Win365 Business.
 
 ## Do you need Encryption?
 About hosting your working environment on Azure: As with any workload you host in the cloud - you have to trust your hoster, in this case Microsoft, to a certain degree regarding your data. As most people using this service will also probably be using e.g. Office365 this should be a given. There is no easy way here to completely encrypt/lock down the VM from the inside.

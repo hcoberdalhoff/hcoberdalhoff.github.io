@@ -150,7 +150,7 @@ Of course, using full versions of Office and Teams on an iPad for collaboration 
 # Summary
 Windows365 (Business Edition) is a nice and simple, no-headache service to offer Windows based Cloud-PCs to your users, especially if you have no existing infrastructure outside of AzureAD and Office365.
 
-Be aware of performance and security-implications like the missing SecureBoot and TPM.
+Be aware of performance implications of using a remote machine.
 
 If you need more control over OS images, networking and location of VMs, on-prem connectivity - go to Windows 365 Enterprise (instead of Business) or use AVD.
 

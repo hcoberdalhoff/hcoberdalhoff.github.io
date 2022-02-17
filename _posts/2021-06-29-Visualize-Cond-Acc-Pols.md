@@ -141,6 +141,10 @@ The rendered result looks like this:
 
 ![CA-Mermaid-Demo](/images/2021-06-29-condacc-mermaid.png)
 
+## UPDATE / Batch processing
+
+If you want to export/visualize all your policies at once and automatically create appropriate filenames, have a look at (ConditionalAccessVisualizer)[https://github.com/hcoberdalhoff/MEMPSToolkit/blob/master/tools/ConditionalAccessVisualizer.ps1]. 
+
 ## Additional tooling
 
 If you need to create PNG, SVG or PDF output from Mermaid, you can install/use [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). 

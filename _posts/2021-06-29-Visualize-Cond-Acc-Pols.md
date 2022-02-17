@@ -143,7 +143,7 @@ The rendered result looks like this:
 
 ## UPDATE / Batch processing
 
-If you want to export/visualize all your policies at once and automatically create appropriate filenames, have a look at (ConditionalAccessVisualizer)[https://github.com/hcoberdalhoff/MEMPSToolkit/blob/master/tools/ConditionalAccessVisualizer.ps1]. 
+If you want to export/visualize all your policies at once and automatically create appropriate filenames, have a look at [ConditionalAccessVisualizer](https://github.com/hcoberdalhoff/MEMPSToolkit/blob/master/tools/ConditionalAccessVisualizer.ps1). 
 
 ## Additional tooling
 

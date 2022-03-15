@@ -33,7 +33,7 @@ As this definition might change with your application's needs, Azure Portal offe
 
 Another way to understand it is to thing of "publishing" your app to the world through an App Registration.
 
-![Application Registration Example](../images/2022-03-14-AppReg-Sample.png)
+![Application Registration Example](/images/2022-03-14-AppReg-Sample.png)
 
 ## Enterprise Application
 An **Enterprise Application** is another name for a "service principal". A "service principal" is an anchor of an application in your AzureAD tenant. Specifically it can be a reference to an application registration.  
@@ -46,7 +46,7 @@ In contrast to an App Registration an Enterprise App is an actual identity. That
 
 As the application is defined by an App Registration you are not really supposed to change the Enterprise App's metadata, permissions etc. Azure Portal thus does not offer interactive means to modify an Enterprise App other than deciding who owns it and who can use it.
 
-![Enterprise App Example](../images/2022-03-14-EntApp-sample.png)
+![Enterprise App Example](/images/2022-03-14-EntApp-sample.png)
 
 ## How do they work together?
 
@@ -54,11 +54,11 @@ When you create an App Registration, AzureAD automatically creates an Enterprise
 
 Both objects share the same "Application ID" to identify which App Registration your Enterprise App anchors.
 
-![Application Registration Properties](../images/2022-03-14-AppReg-properties.png)
+![Application Registration Properties](/images/2022-03-14-AppReg-properties.png)
 
 And here is the corresponding Enterprise App which was created with the App Registration. Have a look at the Application ID.
 
-![Enterprise Application Properties](../images/2022-03-14-EntApp-properties.png)
+![Enterprise Application Properties](/images/2022-03-14-EntApp-properties.png)
 
 ## Permissions on App Registrations
 
@@ -66,27 +66,27 @@ Azure Portal makes it extremely simple to create and use an Application Registra
 
 Let us assign some MS Graph permissions to our App Registration to see what happens.
 
-![Ungranted App Registration Permissions](../images/2022-03-15-AppReg-Permissions-ungranted.png)
+![Ungranted App Registration Permissions](/images/2022-03-15-AppReg-Permissions-ungranted.png)
 
 If you chose permissions that require an admin consent (i.e. they operate on the users own stuff) you will see a little orange exclamation mark telling you permission has not yet been granted.
 
 If you switch over to the Enterprise App's permissions, you will see... nothing. No permissions are present right now. 
 
-![Enterprise App with no granted permissions](../images/2022-03-15-EntApp-No-Permissions.png)
+![Enterprise App with no granted permissions](/images/2022-03-15-EntApp-No-Permissions.png)
 
 When you decide to click the "Grant admin consent" button either on the App Registration or the Enterprise App the permissions laid out in the App Registration will be requested for to the Enterprise App. 
 
 This is basically the same process any application has to go through to interact with data and services in your tenant. This is the job of an Enterprise App.
 
-![Granting Permissions](../images/2022-03-15-EntApp-Granting.png)
+![Granting Permissions](/images/2022-03-15-EntApp-Granting.png)
 
 As a result the permissions are then available for the Enterprise App.
 
-![Enterprise App with granted permissions](../images/2022-03-15-EntApp-Permissions.png)
+![Enterprise App with granted permissions](/images/2022-03-15-EntApp-Permissions.png)
 
 Also, the App registration will now show fully applied permissions.
 
-![App Registration with granted permissions](../images/2022-03-15-AppReg-Permissions.png)
+![App Registration with granted permissions](/images/2022-03-15-AppReg-Permissions.png)
 
 If you only use the App Registration UI in Azure Portal it is easy to miss that an Enterprise App is involved in the process. But it is crucially important - The App Registration will never act as an application in your tenant  - this is done by the Enterprise App of the same name. If you assign AzureAD roles to your app you actually assign the role to the Enterprise App.
 
@@ -100,7 +100,7 @@ The difference between App Registrations and Enterprise Apps is also one explana
 
 You define app credentials and certificates on the App Registration and they become usable in every tenant that uses your app if "app permissions" are given.
 
-![App Registrations Credentials](../images/2022-03-15-AppReg-Secrets.png)
+![App Registrations Credentials](/images/2022-03-15-AppReg-Secrets.png)
 
 ### Managed Identities and Azure Portal
 

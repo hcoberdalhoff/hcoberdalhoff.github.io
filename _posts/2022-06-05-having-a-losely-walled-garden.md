@@ -4,9 +4,7 @@ title: Game ecosystems - Having a loosely walled garden
 date: 2022-06-05
 author: Hans-Carl
 categories:
-    - IT Trends
-    - Gaming
-    - Business
+    - Trends
 ---
 
 # Intro - MS Teams as the new operating system

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Game ecosystems - Having a loosely walled garden
+title: Having a loosely walled garden
 date: 2022-06-05
 author: Hans-Carl
 categories:

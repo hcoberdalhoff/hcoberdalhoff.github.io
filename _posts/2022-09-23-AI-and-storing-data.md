@@ -55,7 +55,9 @@ NeuralVDB builds on [OpenVDB](https://www.openvdb.org/), a storage format for la
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GR2_8d9Bkc0
 " target="_blank"><img src="http://img.youtube.com/vi/GR2_8d9Bkc0/0.jpg" 
-alt="OpenVDB reel" width="240" height="180" border="10" /></a>
+alt="OpenVDB reel" width="640" /></a>
+
+*OpenVDB Demo Reel, (c) OpenVDB.org*
 
 The problem is, even short sequences of high resolution 3D voxel data are just massive. You can get multiple gigabytes in less than a minute of data. OpenVDB tries to be smart and sorts and sparses the data, think [run length encoding](https://en.wikipedia.org/wiki/Run-length_encoding) in 3D - which helps a lot. 
 

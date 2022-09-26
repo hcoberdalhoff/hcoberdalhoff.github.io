@@ -16,6 +16,7 @@ Oversimplified, what you do is, after training on images you invert the directio
 Internally, these models actually denoise (i.e. "inverse diffusion") an image from pure noise while taking "hints" from your prompts. When the model was trained, it learned what desired images look like and which prompts are expected with that image.
 
 ![Midjourney imitating Art by Wilhelm Fick](https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference/raw/main/Images/MJ_V3/MidJourney_Styles/Artists/Art_By_Wilhelm_Fick.png)
+
 *Midjourney imitating Art by Wilhelm Fick*
 
 In other words, the ML model contains knowledge of what we will probably accept as an actual image to our prompt.
@@ -29,6 +30,7 @@ It is also possible to use the knowledge stored in an ML model to recreate an ex
 Matthias Bühlmann [demonstrates](https://matthias-buehlmann.medium.com/stable-diffusion-based-image-compresssion-6f1f0a399202) using StableDiffusion as a lossy image compression technology, similar to JPG.
 
 ![Demonstration of using StableDiffusion as image compressor - Matthias Bühlmann](https://miro.medium.com/max/1100/1*RxuQz8chZmHk8n2fwpgDsg.png)
+
 *Demonstration of using StableDiffusion as image compressor*
 
 Basically you translate and reduce (encode) the image data to a lower dimension (i.e. minimal amount of data), so that the StableDiffusions model can recreate the original image from the encoded data with minimal error. The reduced data is called *latents*. See [variational autoencoders](https://en.wikipedia.org/wiki/Variational_autoencoder). 
@@ -38,6 +40,7 @@ Internally a diffusion model is used again. But this time we do not start at ran
 The reconstruction (decoding) process is basically the same as with the generative AI, but using the latent representation of the original image as source. Also no adversarial AI is used. 
 
 ![Diagram of encoding to latents - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/VAE_Basic.png/638px-VAE_Basic.png)
+
 *Diagram of encoding to latents from Wikipedia*
 
 From a user's perspective this creates the same workflow as using any (lossy) image compression technology. The image and the reconstruction are not identical, but look very similar to us. And the compressed image is is to transport. 
@@ -59,6 +62,7 @@ The problem is, even short sequences of high resolution 3D voxel data are just m
 Nvidia introduces a [latent space representation](https://arxiv.org/abs/2208.04448) of the voxels to reduce the amount of data. They use the fact, that animations have continuity. So you can a train a model on the movement of gases, liquids and solid objects in OpenVDB. Instead of storing voxels, you start with a set of voxels and store latents of motion vectors in NeuralVDB.
 
 ![Image from demo animation by Nvidia, (c) by Nvidia](https://blogs.nvidia.com/wp-content/uploads/2022/08/neuralvdb-ship.jpg)
+
 *Image from demo animation by Nvidia, (c) by Nvidia*
 
 They claim improvements in data size up to a factor of 100x. (Or rather 1/100?)
@@ -72,6 +76,7 @@ On top, DLSS3 takes into account 3D geometry data from the GPU to understand mot
 There seems to be an overlap between DLSS3 and NeuralVDB here in the sense as both can extract motion vectors from 3D data and use it to create additional output data. 
 
 ![DLSS 3 visualization, (c) by Nvidia](https://images.nvidia.com/aem-dam/Solutions/geforce/ada/news/dlss3-ai-powered-neural-graphics-innovations/how-nvidia-dlss-3-works.jpg)
+
 *DLSS 3 visualization, (c) by Nvidia*
 
 ## Possible applications / Future uses

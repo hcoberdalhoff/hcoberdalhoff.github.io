@@ -36,3 +36,14 @@ Basically you translate and reduce (encode) the image data, so that StableDiffus
 
 ## Reconstructing 3D data
 
+3D Voxel representation of scenes: OpenVDB (add images). VERY Big, Gigabytes
+Contains time dimension.
+
+Sparse structure (think run length encoding in 3D), sorted in a tree.
+
+Nvidia uses a latent space representation to reduce this. Also: Understands time or continuity between frames to create vectors
+
+https://arxiv.org/abs/2208.04448
+https://developer.nvidia.com/rendering-technologies/neuralvdb 
+
+Compare DLSS 3 - input is prior frame and geometry. Creates new frames and higher resolution.

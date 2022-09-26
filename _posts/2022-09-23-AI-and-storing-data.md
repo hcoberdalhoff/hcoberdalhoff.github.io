@@ -29,9 +29,9 @@ It is also possible to use the knowledge stored in an ML model to recreate an ex
 
 Matthias Bühlmann [demonstrates](https://matthias-buehlmann.medium.com/stable-diffusion-based-image-compresssion-6f1f0a399202) using StableDiffusion as a lossy image compression technology, similar to JPG.
 
-![Demonstration of using StableDiffusion as image compressor - Matthias Bühlmann](https://miro.medium.com/max/1100/1*RxuQz8chZmHk8n2fwpgDsg.png)
+![Demonstration of using StableDiffusion as image compressor - (c) Matthias Bühlmann](https://miro.medium.com/max/1100/1*RxuQz8chZmHk8n2fwpgDsg.png)
 
-*Demonstration of using StableDiffusion as image compressor*
+*Demonstration of using StableDiffusion as image compressor - (c) Matthias Bühlmann*
 
 Basically you translate and reduce (encode) the image data to a lower dimension (i.e. minimal amount of data), so that the StableDiffusions model can recreate the original image from the encoded data with minimal error. The reduced data is called *latents*. See [variational autoencoders](https://en.wikipedia.org/wiki/Variational_autoencoder). 
 
@@ -111,7 +111,7 @@ I personally expect massive usage, not of a single product or implementation, bu
 
 Skip this if you don't like non-scientific comparisons. 
 
-Studies show, language language models have similar activation patterns to human brains, when answering questions. There seems to be a similarity between the operation of a large language model and our thought process. See https://www.nature.com/articles/s42003-022-03036-1
+Studies show, language language models have similar activation patterns to human brains, when answering questions. There seems to be a similarity between the operation of a large language model and our thought process. See [Caucheteux, C., King, JR. Brains and algorithms partially converge in natural language processing](https://www.nature.com/articles/s42003-022-03036-1).
 
 Yes, we are talking about diffusion models and not linguistic models here - I know. Also there is a strong separation between the knowledge stored in a ML diffusion model and the latent data created by an var. autoencoder. 
 

@@ -29,10 +29,14 @@ Matthias Bühlmann [demonstrates](https://matthias-buehlmann.medium.com/stable-d
 ![Demostration of using StableDiffusion as image compressor - Matthias Bühlmann](https://miro.medium.com/max/1100/1*RxuQz8chZmHk8n2fwpgDsg.png)
 *Demostration of using StableDiffusion as image compressor*
 
-Basically you translate and reduce (encode) the image data, so that StableDiffusions model can recreate the original image from the encoded data with minimal error. The reduced data is called *latents*. See [variational autoencoders](https://en.wikipedia.org/wiki/Variational_autoencoder). The process is similiar to using a ML model to upscale images, but using the latent representation of the original image as source.
+Basically you translate and reduce (encode) the image data to a lower dimension (i.e. minimal amount of data), so that the StableDiffusions model can recreate the original image from the encoded data with minimal error. The reduced data is called *latents*. See [variational autoencoders](https://en.wikipedia.org/wiki/Variational_autoencoder). 
+
+The reconstruction (decoding) process is similiar to using a ML model to upscale images, but using the latent representation of the original image as source. 
 
 ![Diagram of encoding to latents - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/VAE_Basic.png/638px-VAE_Basic.png)
 *Diagram of encoding to latents from Wikidpedia*
+
+
 
 ## Reconstructing 3D data
 
@@ -47,3 +51,16 @@ https://arxiv.org/abs/2208.04448
 https://developer.nvidia.com/rendering-technologies/neuralvdb 
 
 Compare DLSS 3 - input is prior frame and geometry. Creates new frames and higher resolution.
+
+## Possible applications
+
+Video codec?
+
+## Interpretation
+
+Studies show, deep language models have similiar activation pattern to human brains, when answering questions. There seems to be a similarity. 
+https://www.nature.com/articles/s42003-022-03036-1
+
+Back to our topic - Currently there is a strong separation between the knowledge stored in the ML model and the latent data created by an var. autoencoder. By the definition of the autoencoder: The better the model "understands" the data given, the less information needs to be stored in the latent space. 
+
+Let us take this to an extreme. Assume a model could recreate, say, a movie just from mentioning the name of the movie. Then we might have created something akin to memory (as in remembering) just for machines. Like when we are able to sing along to a song we know by hard. Streaming a movie in this case would be like tapping another beings memories - just in HD. Like when a smell will bring back a whole slew of memories of an prior event.

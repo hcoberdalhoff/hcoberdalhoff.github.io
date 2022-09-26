@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI will change how we store and process data
+title: AI and storing data
 date: 2022-09-23
 author: Hans-Carl
 categories:

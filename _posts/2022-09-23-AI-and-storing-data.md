@@ -117,6 +117,6 @@ Yes, we are talking about diffusion models and not linguistic models here - I kn
 
 Still - by the definition of an autoencoder: The better the model "understands" given data, the less information needs to be stored in the latent space representation. It would also make sense for brains to store only the minimal amount information needed to "remember" something.
 
-Let us take this to an extreme. Assume a model could recreate, say, a movie's audio and video just from mentioning the name of the movie. Then we might have created something akin to memory (as in remembering) but for machines. Like when we are able to sing along to a song we know by hard just from hearing some initial guitar chords. Like when a smell will bring back a whole slew of memories of an prior event. Streaming a movie in this case would be like tapping into another beings memories - just in upscaled Full HD or 4K. 
+Let us take this to an extreme. Assume a model could recreate, say, a movie's audio and video just from mentioning the name of the movie. Then we might have created something akin to memory (as in remembering) but for machines. Like when we are able to sing along to a song we know by hard just from hearing some initial guitar chords. Like when a smell will bring back a whole slew of memories of a prior event. Streaming a movie in this case would be like tapping into another beings memories - just in upscaled Full HD or 4K. 
 
 

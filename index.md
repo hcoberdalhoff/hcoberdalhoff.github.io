@@ -13,10 +13,10 @@ PS ~> Get-HCOContent -all | Format-Table
  | `Source`    | `URL`                                                                                                        |
  | ----------- | ------------------------------------------------------------------------------------------------------------ |
  | `Twitter`   | [twitter.com/HOberdalhoff](https://twitter.com/HOberdalhoff)                                                 |
- | `LinkedIn`  | [linkedin.com/in/hcoberdalhoff/](https://linkedin.com/in/hcoberdalhoff/)                                     |
+ | `LinkedIn`  | [linkedin.com/in/hcoberdalhoff/](https://linkedin.com/in/hcoberdalhoff)                                     |
  | `YouTube`   | [youtube.com/@TeHCCrumbs](https://www.youtube.com/@TeHCCrumbs)         |
  | `GitHub`    | [github.com/hcoberdalhoff](https://github.com/hcoberdalhoff)                                                 |
- | `Instagram` | [instagram.com/hcoberdal/](https://www.instagram.com/hcoberdal/)                                             |
+ | `Instagram` | [instagram.com/hcoberdal/](https://www.instagram.com/hcoberdal)                                             |
 
 
 

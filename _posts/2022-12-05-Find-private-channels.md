@@ -9,10 +9,10 @@ categories:
 ---
 
 # Overview
-While building some reports for SharePoint, I realized that I could not find a good explanation online on how to the SharePoint sites connected to a Teams' private channels. Let's fix that :)
+While building some reports for SharePoint, I realized that I could not find a good explanation online on how to get the SharePoint sites connected to a Teams' private channels. Let's fix that :)
 
 # Setup
-Assume you have a MS Teams Team `DemoTeam`, that has some public channels and at least one private channel.
+Assume you have a MS Teams Team, that has some public channels and at least one private channel.
 We will use Microsoft Graph PowerShell SDK and the `PnP.PowerShell` module to interact with SharePoint and Graph respectively.
 
 Every MS Teams Team is based on an AzureAD group object. For our demo let us assume the group's object id is 

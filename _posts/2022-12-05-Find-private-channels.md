@@ -52,7 +52,7 @@ We will ask SharePoint for all available sites in this tenant...
 $allSites = get-PnPTenantSite
 ```
 
-... and filter those with the `RelatedGroupId` property matching our group's Id. If we just want the private channels, we will further filter by those sites not having a group id.
+... and filter those with the `RelatedGroupId` property matching our group's Id. If we just want the private channels, we will further filter by sites not having a valid group id.
 
 ```powershell
 $privateChannels = $allSites | Where-Object { ($_.RelatedGroupId -eq $groupId) -and ($_.GroupId -eq "00000000-0000-0000-0000-000000000000") }

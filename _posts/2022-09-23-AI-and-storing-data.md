@@ -15,7 +15,7 @@ Oversimplified, what you do is, after training on images you invert the directio
 
 Internally, these models actually denoise (i.e. "inverse diffusion") an image from pure noise while taking "hints" from your prompts. When the model was trained, it learned what desired images look like and which prompts are expected with that image.
 
-![DALL-E imagening cats riding a bike](/image/2023-03-30-dall-e-cats.png)
+![DALL-E imagening cats riding a bike](/images/2023-03-30-dall-e-cats.png)
 *DALL-E imagening cats riding a bike*
 
 In other words, the ML model contains knowledge of what we will probably accept as an actual image to our prompt.

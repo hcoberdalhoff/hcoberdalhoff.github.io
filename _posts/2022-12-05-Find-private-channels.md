@@ -33,7 +33,7 @@ if ($siteObj.webUrl) {
 
 A team's private channels are not part of that site. They are handled as independent SharePoint sites, but without being backed by an AzrueAD group. MS Graph seems not to offer a straightforward way to discovery these sites/channels.
 
-SharePoint will help you here. You need to connect to your tenants admin site first. 
+SharePoint will help you here, but you need to connect to your tenants admin site first. 
 
 If your SharePoint tenant is `contoso.sharepoint.com` then your admin site will be `contoso-admin.sharepoint.com`. Let us use some regex to automate this.
 
@@ -52,7 +52,7 @@ We will ask SharePoint for all available sites in this tenant...
 $allSites = get-PnPTenantSite
 ```
 
-... and filter those with the `RelatedGroupId` property matching our group's Id. If we just want the private channels, we will further filter by those sites not having a group id.
+... and filter those with the `RelatedGroupId` property matching our group's Id. If we just want the private channels, we will further filter by sites not having a valid group id.
 
 ```powershell
 $privateChannels = $allSites | Where-Object { ($_.RelatedGroupId -eq $groupId) -and ($_.GroupId -eq "00000000-0000-0000-0000-000000000000") }

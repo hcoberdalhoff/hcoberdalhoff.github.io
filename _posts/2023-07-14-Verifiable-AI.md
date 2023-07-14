@@ -19,7 +19,7 @@ One approach that seems to improve this situation is to allow an AI assistant to
 
 ## Toolchain
 
-<img src="../images/2023-07-14-Ai-has-computer.jpg" width="40%" align="right" alt="DALL-E/Bing Human using a Robot using a Computer" >
+<img src="/images/2023-07-14-Ai-has-computer.jpg" width="40%" align="right" alt="DALL-E/Bing Human using a Robot using a Computer" >
 
 OpenAI did just that in a very comprehensive way. If you are a ChatGPT+ subscriber, you now have access to [Code Interpreter](https://openai.com/blog/chatgpt-plugins#code-interpreter). Basically, they created a computer for the AI to use. More specifically, ChatGPT has access to a small virtual machine, that can run Python code and that can load data and output files. 
 
